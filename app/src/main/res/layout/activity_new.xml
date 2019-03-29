@@ -28,7 +28,7 @@
             android:layout_weight="1"
             android:layout_height="wrap_content"
             android:text="Usuario:"
-            android:textSize="20sp"
+            android:textSize="18sp"
             android:textColor="#333"/>
 
         <TextView
@@ -36,7 +36,7 @@
             android:layout_width="0dp"
             android:layout_weight="2"
             android:layout_height="wrap_content"
-            android:textSize="20sp"
+            android:textSize="18sp"
             android:textColor="#333"/>
 
 
@@ -54,7 +54,7 @@
             android:layout_weight="1"
             android:layout_height="wrap_content"
             android:text="Correo:"
-            android:textSize="20sp"
+            android:textSize="18sp"
             android:textColor="#333"/>
 
         <TextView
@@ -62,7 +62,7 @@
             android:layout_width="0dp"
             android:layout_weight="2"
             android:layout_height="wrap_content"
-            android:textSize="20sp"
+            android:textSize="18sp"
             android:textColor="#333"/>
 
 
@@ -80,15 +80,15 @@
             android:layout_weight="1"
             android:layout_height="wrap_content"
             android:text="Total de productos:"
-            android:textSize="20sp"
+            android:textSize="18sp"
             android:textColor="#333"/>
 
         <TextView
-            android:id="@+id/tv_total"
+            android:id="@+id/tv_total1"
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="wrap_content"
-            android:textSize="20sp"
+            android:textSize="18sp"
             android:textColor="#333"/>
 
 
@@ -100,7 +100,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Detalle de productos"
-        android:textSize="20sp"
+        android:textSize="18sp"
+        android:textStyle="bold"
         android:textColor="#333"
         android:layout_gravity="center"
         android:layout_margin="@dimen/medium_gap"/>
@@ -123,8 +124,8 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Producto n"
-                android:textSize="18sp"
+                android:text="Cámara"
+                android:textSize="15sp"
                 android:textColor="#fff"
                 android:gravity="center"
                 android:layout_margin="@dimen/small_gap"/>
@@ -132,9 +133,9 @@
                 android:id="@+id/tv_1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="#"
                 android:textColor="#fff"
                 android:textSize="30sp"
+                android:text="0"
                 android:gravity="center"
                 />
 
@@ -153,8 +154,8 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Producto n"
-                android:textSize="18sp"
+                android:text="Celular"
+                android:textSize="15sp"
                 android:textColor="#fff"
                 android:gravity="center"
                 android:layout_margin="@dimen/small_gap"/>
@@ -162,7 +163,7 @@
                 android:id="@+id/tv_2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="#"
+                android:text="0"
                 android:textColor="#fff"
                 android:textSize="30sp"
                 android:gravity="center"
@@ -183,8 +184,8 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Producto n"
-                android:textSize="18sp"
+                android:text="Batería"
+                android:textSize="15sp"
                 android:textColor="#fff"
                 android:gravity="center"
                 android:layout_margin="@dimen/small_gap"/>
@@ -192,7 +193,7 @@
                 android:id="@+id/tv_3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="#"
+                android:text="0"
                 android:textColor="#fff"
                 android:textSize="30sp"
                 android:gravity="center"
@@ -219,8 +220,8 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Producto n"
-                android:textSize="18sp"
+                android:text="Tablet"
+                android:textSize="15sp"
                 android:textColor="#fff"
                 android:gravity="center"
                 android:layout_margin="@dimen/small_gap"/>
@@ -228,7 +229,7 @@
                 android:id="@+id/tv_4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="#"
+                android:text="0"
                 android:textColor="#fff"
                 android:textSize="30sp"
                 android:gravity="center"
@@ -249,8 +250,8 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Producto n"
-                android:textSize="18sp"
+                android:text="Teclado"
+                android:textSize="15sp"
                 android:textColor="#fff"
                 android:gravity="center"
                 android:layout_margin="@dimen/small_gap"/>
@@ -258,7 +259,7 @@
                 android:id="@+id/tv_5"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="#"
+                android:text="0"
                 android:textColor="#fff"
                 android:textSize="30sp"
                 android:gravity="center"
@@ -279,8 +280,8 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Producto n"
-                android:textSize="18sp"
+                android:text="Laptop"
+                android:textSize="15sp"
                 android:textColor="#fff"
                 android:gravity="center"
                 android:layout_margin="@dimen/small_gap"/>
@@ -288,7 +289,7 @@
                 android:id="@+id/tv_6"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="#"
+                android:text="0"
                 android:textColor="#fff"
                 android:textSize="30sp"
                 android:gravity="center"
@@ -314,8 +315,8 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Producto n"
-                android:textSize="18sp"
+                android:text="Cargador"
+                android:textSize="15sp"
                 android:textColor="#fff"
                 android:gravity="center"
                 android:layout_margin="@dimen/small_gap"/>
@@ -323,8 +324,8 @@
                 android:id="@+id/tv_7"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="#"
                 android:textColor="#fff"
+                android:text="0"
                 android:textSize="30sp"
                 android:gravity="center"
                 />
@@ -344,8 +345,8 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Producto n"
-                android:textSize="18sp"
+                android:text="Mouse"
+                android:textSize="15sp"
                 android:textColor="#fff"
                 android:gravity="center"
                 android:layout_margin="@dimen/small_gap"/>
@@ -353,7 +354,7 @@
                 android:id="@+id/tv_8"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="#"
+                android:text="0"
                 android:textColor="#fff"
                 android:textSize="30sp"
                 android:gravity="center"
@@ -374,8 +375,8 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Producto n"
-                android:textSize="18sp"
+                android:text="Monitor"
+                android:textSize="15sp"
                 android:textColor="#fff"
                 android:gravity="center"
                 android:layout_margin="@dimen/small_gap"/>
@@ -383,8 +384,8 @@
                 android:id="@+id/tv_9"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="#"
                 android:textColor="#fff"
+                android:text="0"
                 android:textSize="30sp"
                 android:gravity="center"
                 />

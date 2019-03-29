@@ -14,12 +14,13 @@ import com.example.evaluacion1.utils.AppConstants;
 public class MainActivity extends AppCompatActivity {
     private EditText usuarioET;
     private EditText correoET;
+    private TextView b1,b2,b3,b4,b5,b6,b7,b8,b9;
     private Button enviarBT;
 
     private LinearLayout bt1, bt2, bt3, bt4, bt5, bt6, bt7, bt8, bt9;
     private TextView tv1, tv2, tv3, tv4, tv5, tv6, tv7, tv8, tv9;
-    private int cont1,cont2, cont3, cont4, cont5, cont6, cont7, cont8, cont9;
-    private int total;
+    private int cont1 =0,cont2=0, cont3=0, cont4=0, cont5=0, cont6=0, cont7=0, cont8=0, cont9=0;
+    private int total=0;
 
 
     @Override
@@ -36,6 +37,18 @@ public class MainActivity extends AppCompatActivity {
         bt7 = findViewById(R.id.bt_7);
         bt8 = findViewById(R.id.bt_8);
         bt9 = findViewById(R.id.bt_9);
+
+        b1 = findViewById(R.id.et_1);
+        b2 = findViewById(R.id.et_2);
+        b3 = findViewById(R.id.et_3);
+        b4 = findViewById(R.id.et_4);
+        b5 = findViewById(R.id.et_5);
+        b6 = findViewById(R.id.et_6);
+        b7 = findViewById(R.id.et_7);
+        b8 = findViewById(R.id.et_8);
+        b9 = findViewById(R.id.et_9);
+
+
 
         tv1 = findViewById(R.id.et_1);
         tv2 = findViewById(R.id.et_2);
@@ -59,6 +72,7 @@ public class MainActivity extends AppCompatActivity {
 
         bt2.setOnClickListener(v->{
             cont2++;
+            total++;
 
             tv2.setText(cont2 + "");
 
@@ -66,6 +80,7 @@ public class MainActivity extends AppCompatActivity {
 
         bt3.setOnClickListener(v->{
             cont3++;
+            total++;
 
             tv3.setText(cont3 + "");
 
@@ -73,35 +88,41 @@ public class MainActivity extends AppCompatActivity {
 
         bt4.setOnClickListener(v->{
             cont4++;
+            total++;
             tv4.setText(cont4 + "");
 
         });
 
         bt5.setOnClickListener(v->{
             cont5++;
+            total++;
             tv5.setText(cont5 + "");
 
         });
         bt6.setOnClickListener(v->{
             cont6++;
+            total++;
             tv6.setText(cont6 + "");
 
         });
 
         bt7.setOnClickListener(v->{
             cont7++;
+            total++;
             tv7.setText(cont7 + "");
 
         });
 
         bt8.setOnClickListener(v->{
             cont8++;
+            total++;
             tv8.setText(cont8 + "");
 
         });
 
         bt9.setOnClickListener(v->{
             cont9++;
+            total++;
             tv9.setText(cont9 + "");
 
         });
@@ -122,6 +143,18 @@ public class MainActivity extends AppCompatActivity {
         Intent mIntent = new Intent (MainActivity.this, NewActivity.class);
         mIntent.putExtra(AppConstants.TEXT_KEY_USERNAME, usuarioET.getText().toString());
         mIntent.putExtra(AppConstants.TEXT_KEY_EMAIL, correoET.getText().toString());
+        mIntent.putExtra(AppConstants.TEXT_KEY_TOTAL, total+"");
+
+        mIntent.putExtra(AppConstants.TEXT_KEY_1, b1.getText().toString());
+        mIntent.putExtra(AppConstants.TEXT_KEY_2, b2.getText().toString());
+        mIntent.putExtra(AppConstants.TEXT_KEY_3, b3.getText().toString());
+        mIntent.putExtra(AppConstants.TEXT_KEY_4, b4.getText().toString());
+        mIntent.putExtra(AppConstants.TEXT_KEY_5, b5.getText().toString());
+        mIntent.putExtra(AppConstants.TEXT_KEY_6, b6.getText().toString());
+        mIntent.putExtra(AppConstants.TEXT_KEY_7, b7.getText().toString());
+        mIntent.putExtra(AppConstants.TEXT_KEY_8, b8.getText().toString());
+        mIntent.putExtra(AppConstants.TEXT_KEY_9, b9.getText().toString());
+
 
 
         startActivity(mIntent);
